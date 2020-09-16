@@ -1,0 +1,175 @@
+.swal-modal{
+    width: 520px !important;
+}
+
+.title{
+    text-align: center;
+    margin-top: 5%;
+}
+.cont{
+    width: 98% !important;
+    margin: auto;
+}
+.tb-show{
+    width: 100% !important;
+    padding: 5px;
+}
+
+.tb-show  th {
+    padding: 3px !important;
+    text-align: center;
+}
+
+.tb-search{
+    width: 100% !important;
+    padding: 5px;
+}
+.tb-search th {
+    padding: 3px !important;
+    text-align: center;
+}
+
+.btn-add {
+    display: flex;
+    justify-content: end;
+    width: 97%;
+    margin: auto;
+}
+
+
+.cont-search {
+    border: 2px solid #DDDDDD;
+    display: flex;
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+.cont-search > div {
+    display: flex;
+    width: 45% !important;
+    margin: auto;
+}
+.cont-search > div > input[type="text"]{
+
+    margin-right: 10px;
+}
+
+.cont-search > div > select {
+
+    margin-right: 10px;
+}
+
+.cont-bus-add {
+    border: 1px solid #DDDDDD;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.group-cont {
+    display: flex;
+    width: 45%;
+}
+
+.group-cont > button{
+    margin-left: 5px;
+}
+
+.cont-tab-add{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+.group-cont-add{
+    display: flex;
+    width: 45%;
+}
+.group-cont-add2{
+    display: flex;
+    width: 100%;
+}
+.group-cont-add2 > table{
+    width: 100%;
+}
+
+hr {
+    width: 85%;
+    margin: auto;
+}
+
+.est {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.mater {
+    flex-direction: column !important;
+}
+
+.cont-btn{
+    display: flex;
+    justify-content: end;
+}
+
+.cont-btn .form-group{
+    width: 75%;
+    padding: 5px;
+}
+
+.cont-btn > button{
+    width: 20%;
+    height: 45px;
+    margin-top: 30px;
+    margin-left: 5px;
+}
+
+.cont-btn .form-group input[type="date"]{
+    width: 80%;
+}
+
+
+.cont-al {
+    width: 85%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cont-codes{
+    width: 100%;
+    
+    display: flex;
+}
+
+.cont-codes > .form-group {
+    width: 70%;
+}
+
+.cont-codes > .cont-btn {
+    width: 25%;
+}
+
+.cont-codes > .cont-btn > button{
+    width:95%;
+    height: 37px;
+    margin-top: 33px;
+}
+
+
+#grado{
+    width: 70%;
+    margin-right: 6px;
+}
+
+.cont-codes > button{
+    width: 25%;
+}
+
+.mdper {
+    width: 113%;
+}

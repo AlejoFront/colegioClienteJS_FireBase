@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente JS FireBase | Colegio</title>
+    <link rel="stylesheet" href="../libs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../libs/css/footer.css">
+    <link rel="stylesheet" href="../libs/css/styles.css">
+    <script src="../libs/js/firebase-app.js"></script>
+    <script src="../libs/js/firebase-firestore.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Colegio</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.html">Principal</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Matricula</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="agregarMatricula.html">Agregar | Matricula</a>
+                    <a class="dropdown-item" href="matricula.html">Agregar, Editar, Eliminar | Listar Matricula</a>
+                    <a class="dropdown-item" href="buscarMatricula.html">Filtrar Matricula por dos parametros</a>
+                    <a class="dropdown-item" href="eliminarMatricula.html">Buscar, Eliminar | Matricula</a>
+                    <a class="dropdown-item" href="editarMatricula.html">Buscar, Editar | Matricula</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="acercaDe()">Acerca de ....</a>
+            </li>
+        </ul>
+    </nav>
+
+    <h2 class="title mb-5">Matricula</h2>
+
+
+
+    <div class="cont-bus-add">
+        <div class="group-cont">
+            <input type="text" name="codEst" id="codEst" placeholder="Documento del Estudiante" class="form-control">
+            <button type="button" class="btn btn-success" onclick="buscardoc()">Buscar</button>
+        </div>
+
+        <div class="group-cont">
+            <select class="form-control" name="grado" id="grado">
+                <option value="none"> Selecciona El grado</option>
+                <option value="1">Grado 1</option>
+                <option value="2">Grado 2</option>
+                <option value="3">Grado 3</option>
+                <option value="4">Grado 4</option>
+                <option value="5">Grado 5</option>
+                <option value="6">Grado 6</option>
+                <option value="7">Grado 7</option>
+                <option value="8">Grado 8</option>
+                <option value="9">Grado 9</option>
+                <option value="10">Grado 10</option>
+                <option value="11">Grado 11</option>
+            </select>
+            <button type="button" name="codgrado" id="codGrado" class="btn btn-success"
+                onclick="buscargrado()">Buscar</button>
+        </div>
+    </div>
+    <div class="cont-al">
+        <div id="alertas">
+
+        </div>
+    </div>
+    <div class="cont-tab-add">
+      
+        <div class="group-cont-add est">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody id="tb-est">
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="group-cont-add mater">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre Materia</th>
+                        <th>Intensidad Horaria</th>
+                    </tr>
+                </thead>
+                <tbody id="tb-materia">
+
+                </tbody>
+            </table>
+
+            <div class="cont-btn mt-3">
+                <div class="form-group">
+                    <label for="fechInicio">Fecha Inicio:</label>
+                    <input type="date" class="form-control" id="fechInicio">
+                </div>
+
+                <div class="form-group">
+                    <label for="fechFinal">Fecha Final:</label>
+                    <input type="date" class="form-control" id="fechFinal">
+                </div>
+
+                <button type="button" class="btn btn-primary" id="btmatricular" onclick="save()"
+                    disabled>Matricular</button>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <hr>
+
+
+
+
+
+
+
+
+
+
+    <script src="../libs/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="../libs/js/popper.min.js"></script>
+    <script src="../libs/js/bootstrap.min.js"></script>
+    <script src="../libs/js/sweetalert.min.js"></script>
+    <script src="../libs/js/fontawesome.js"></script>
+    <script src="../libs/js/aplicacion.js"></script>
+    <script src="../JavaScript/Matricula/create.js"></script>
+</body>
+
+</html>
