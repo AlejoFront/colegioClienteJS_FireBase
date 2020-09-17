@@ -71,8 +71,6 @@ function buscargrado(){
 
 
 
-
-
 function guardar() {
 
     var pkEstudiante = parseInt(document.getElementById('pkest').value);
